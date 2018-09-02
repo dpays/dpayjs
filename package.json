@@ -1,11 +1,11 @@
 {
-  "name": "@steemit/steem-js",
-  "version": "0.7.1",
-  "description": "Steem.js the JavaScript API for Steem blockchain",
+  "name": "@dpay/js",
+  "version": "0.1.1",
+  "description": "dPay.js the JavaScript API for dPay blockchain",
   "main": "lib/index.js",
   "scripts": {
     "test": "eslint --quiet src test; mocha -t 40000 --require babel-polyfill --require babel-register",
-    "test-auth": "npm test -- --grep 'steem.auth'",
+    "test-auth": "npm test -- --grep 'dpay.auth'",
     "build": "npm run build-browser && npm run build-node",
     "build-browser": "rm -rf dist && NODE_ENV=production node ./node_modules/webpack/bin/webpack.js && gzip -k -f ./dist/*.js && du -h ./dist/*",
     "build-node": "mkdir -p ./lib && cp -r ./src/* ./lib/ && babel ./src --out-dir ./lib",
@@ -17,22 +17,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steemit/steem-js.git"
+    "url": "git+https://github.com/dpays/dpayjs.git"
   },
   "keywords": [
-    "steem",
-    "steemit",
+    "dpay",
+    "dsite",
     "blockchain",
-    "steemjs"
+    "dpayjs"
   ],
   "author": "Fabien (https://github.com/bonustrack)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steemit/steem-js/issues"
+    "url": "https://github.com/dpays/dpayjs/issues"
   },
-  "homepage": "https://github.com/steemit/steem-js#readme",
+  "homepage": "https://github.com/dpays/dpayjs#readme",
   "dependencies": {
-    "@steemit/rpc-auth": "^1.1.0",
+    "@dpay/rpc-auth": "~0.1.1",
     "bigi": "^1.4.2",
     "bluebird": "^3.4.6",
     "browserify-aes": "^1.0.6",
@@ -71,6 +71,7 @@
     "webpack-visualizer-plugin": "^0.1.5"
   },
   "contributors": [
+    "Jared Rice Sr. (https://github.com/jrice)",
     "Fabien (https://github.com/bonustrack)",
     "James Calfee (https://github.com/jcalfee)",
     "Nilesh Suthar (https://github.com/nil1511)",
