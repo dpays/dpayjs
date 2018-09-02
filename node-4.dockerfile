@@ -1,6 +1,6 @@
 FROM node:4
-ADD ./package.json /steemjs/package.json
-WORKDIR /steemjs
+ADD ./package.json /dpayjs/package.json
+WORKDIR /dpayjs
 RUN npm install
-ADD . /steemjs
+ADD . /dpayjs
 RUN npm test
