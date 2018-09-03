@@ -17,9 +17,9 @@ import {
 } from './transports/http';
 import {
     sign as signRequest
-} from '@steemit/rpc-auth';
+} from '@dpay/rpc-auth';
 
-class Steem extends EventEmitter {
+class DPay extends EventEmitter {
     constructor(options = {}) {
         super(options);
         this._setTransport(options);
@@ -343,6 +343,6 @@ class Steem extends EventEmitter {
 }
 
 // Export singleton instance
-const steem = new Steem(config);
-exports = module.exports = steem;
-exports.Steem = Steem;
+const dpay = new DPay(config);
+exports = module.exports = dpay;
+exports.DPay = DPay;
