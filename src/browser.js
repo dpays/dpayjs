@@ -5,7 +5,7 @@ const config = require("./config");
 const formatter = require("./formatter")(api);
 const utils = require("./utils");
 
-const steem = {
+const dpay = {
   api,
   auth,
   broadcast,
@@ -15,11 +15,11 @@ const steem = {
 };
 
 if (typeof window !== "undefined") {
-  window.steem = steem;
+  window.dpay = dpay;
 }
 
 if (typeof global !== "undefined") {
-  global.steem = steem;
+  global.dpay = dpay;
 }
 
-exports = module.exports = steem;
+exports = module.exports = dpay;
