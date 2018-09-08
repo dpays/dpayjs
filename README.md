@@ -50,7 +50,7 @@ https://cdn.benchx.io/lib/latest/dpay.min.js<br/>
 ## Server
 ## Install
 ```
-$ npm install @dpay/js --save
+$ npm install dpay --save
 ```
 
 ## RPC Servers
@@ -61,7 +61,7 @@ https://jefferson.dpays.io<br/>
 ## Examples
 ### Broadcast Vote
 ```js
-var dpay = require('@dpay/js');
+var dpay = require('dpay');
 
 var wif = dpay.auth.toWif(username, password, 'posting');
 dpay.broadcast.vote(wif, voter, author, permlink, weight, function(err, result) {

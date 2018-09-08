@@ -17,7 +17,7 @@ import {
 } from './transports/http';
 import {
     sign as signRequest
-} from '@dpay/rpc-auth';
+} from 'dpay-rpc-auth';
 
 class DPay extends EventEmitter {
     constructor(options = {}) {
