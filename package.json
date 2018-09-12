@@ -44,7 +44,7 @@
     "cross-fetch": "^1.1.1",
     "debug": "^2.6.8",
     "detect-node": "^2.0.3",
-    "dpay-rpc-auth": "~0.1.1",
+    "dpay-rpc-auth": "~0.1.2",
     "ecurve": "^1.0.5",
     "lodash": "^4.16.4",
     "secure-random": "^1.1.1",
