@@ -1,6 +1,6 @@
 {
   "name": "dpayjs",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "dPay.js the JavaScript API for dPay blockchain",
   "main": "lib/index.js",
   "scripts": {
