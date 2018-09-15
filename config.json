@@ -1,5 +1,5 @@
 {
-  "transport": "wss",
+  "transport": "ws",
   "websocket": "wss://d.dpays.io",
   "uri": "https://api.dpays.io",
   "url": "",
