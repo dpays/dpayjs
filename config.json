@@ -1,6 +1,6 @@
 {
-  "transport": "wss",
-  "websocket": "wss://d.dpays.io",
+  "transport": "ws",
+  "websocket": "wss://dpayd.dpays.io",
   "uri": "https://api.dpays.io",
   "url": "",
   "dev_uri": "https://api.dpays.io",

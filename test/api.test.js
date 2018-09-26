@@ -9,7 +9,9 @@ describe('dpay.api:', function () {
 
   describe('setOptions', () => {
     it('works', () => {
-      dpay.api.setOptions({ url: dpay.config.get('websocket') });
+      let url = dpay.config.get('uri');
+      if(! url) url = dpay.config.get('websocket');
+      dpay.api.setOptions({ url: url, useAppbaseApi: true });
     });
   });
 

@@ -167,7 +167,7 @@ module.exports = dpayApi => {
       return out;
     },
 
-    vestToBex: function(
+    vestToDPay: function(
       vestingShares,
       totalVestingShares,
       totalVestingFundBex

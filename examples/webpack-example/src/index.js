@@ -1,4 +1,4 @@
-const dpay = require('dpay/lib/browser');
+const dpay = require('dpayjs/lib/browser');
 
 console.log('Getting post content...');
 const resultP = dpay.api.getContentAsync('yamadapc', 'test-1-2-3-4-5-6-7-9');
