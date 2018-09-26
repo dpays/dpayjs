@@ -6,7 +6,7 @@ module.exports = dpayApi => {
     return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  function vestingBex(account, gprops) {
+  function vestingDPay(account, gprops) {
     const vests = parseFloat(account.vesting_shares.split(" ")[0]);
     const total_vests = parseFloat(gprops.total_vesting_shares.split(" ")[0]);
     const total_vest_dpay = parseFloat(
@@ -66,11 +66,11 @@ module.exports = dpayApi => {
           dpayApi.getStateAsync(`/@{username}`).then(data => {
             gprops = data.props;
             feed_price = data.feed_price;
-            vesting_dpay = vestingBex(account, gprops);
+            vesting_dpay = vestingDPay(account, gprops);
           })
         );
       } else {
-        vesting_dpay = vestingBex(account, gprops);
+        vesting_dpay = vestingDPay(account, gprops);
       }
     }
 
@@ -170,10 +170,10 @@ module.exports = dpayApi => {
     vestToDPay: function(
       vestingShares,
       totalVestingShares,
-      totalVestingFundBex
+      totalVestingFundDPay
     ) {
       return (
-        parseFloat(totalVestingFundBex) *
+        parseFloat(totalVestingFundDPay) *
         (parseFloat(vestingShares) / parseFloat(totalVestingShares))
       );
     },
@@ -191,7 +191,7 @@ module.exports = dpayApi => {
       return amount.toFixed(3) + " " + asset;
     },
     numberWithCommas,
-    vestingBex,
+    vestingDPay,
     estimateAccountValue,
     createSuggestedPassword
   };

@@ -947,3 +947,4 @@ var isValidUsername = dpay.utils.validateAccountName('a1');
 console.log(isValidUsername);
 // => 'Account name should be longer.'
 ```
+
